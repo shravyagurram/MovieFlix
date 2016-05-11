@@ -23,6 +23,7 @@ import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Entity
 @Table(name="UserComments")
 public class UserComments {
@@ -38,64 +39,16 @@ public class UserComments {
 	
 	@ManyToOne   
 	@JoinColumn(name="emailId")
-	//@JsonIgnore
+	
 	private UserDetails userdetails;
 	
 
 	@ManyToOne
-	//(optional=false)
+	
 	@JoinColumn(name="MovieId")
 	private ShowDetails showdetails;
 
 
-	public int getId() {
-		return Id;
-	}
-
-
-	public void setId(int id) {
-		Id = id;
-	}
-
-
-	public double getUserRating() {
-		return userRating;
-	}
-
-
-	public void setUserRating(double userRating) {
-		this.userRating = userRating;
-	}
-
-
-	public String getUserComment() {
-		return userComment;
-	}
-
-
-	public void setUserComment(String userComment) {
-		this.userComment = userComment;
-	}
-
-	//@JsonIgnore
-	public UserDetails getUserdetails() {
-		return userdetails;
-	}
-
-
-	public void setUserdetails(UserDetails userdetails) {
-		this.userdetails = userdetails;
-	}
-
-	//@JsonIgnore
-	public ShowDetails getShowdetails() {
-		return showdetails;
-	}
-
-
-	public void setShowdetails(ShowDetails showdetails) {
-		this.showdetails = showdetails;
-	}
 	
 	
 }

@@ -2,6 +2,7 @@ package io.egen.dao;
 
 import io.egen.entity.UserComments;
 
+import java.util.Collections;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -43,7 +44,9 @@ public class UserCommentsRepositoryImpl implements UserCommentsRepository{
 	public List<String> viewComments(String movieId) {
 		TypedQuery<String> query = em.createQuery("SELECT u.userComment FROM ShowDetails s join s.usercomments u where s.MovieId=:movieid ", String.class);
 		query.setParameter("movieid", movieId);
-		return query.getResultList();
+		List<String> list=query.getResultList();
+		list.removeAll(Collections.singleton(null));  
+		return list;
 		
 	}
 }

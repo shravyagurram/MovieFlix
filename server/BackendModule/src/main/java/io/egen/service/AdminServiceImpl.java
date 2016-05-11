@@ -37,9 +37,9 @@ public class AdminServiceImpl implements AdminService {
 	}
 
 	@Override
-	public void delete(String imdbId) throws DataNotFoundException {
+	public void delete(String movieId) throws DataNotFoundException {
 
-		ShowDetails existing = repository.findByImdbId(imdbId);
+		ShowDetails existing = repository.findById(movieId);
 		if (existing == null) {
 			throw new DataNotFoundException();
 		}
