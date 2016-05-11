@@ -1,0 +1,445 @@
+
+Data to be inserted:
+
+
+{
+    "Title": "Avengers: Age of Ultron",
+    "Year": "2015",
+    "Rated": "PG-13",
+    "Released": "2015-05-01",
+    "Runtime": "141 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon, Stan Lee (Marvel comics), Jack Kirby (Marvel comics)",
+    "Actors": "Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans",
+    "Plot": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's Mightiest Heroes to stop the villainous Ultron from enacting his terrible plans.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "1 win & 12 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg",
+    "Metascore": "66",
+    "imdbRating": "7.6",
+    "imdbVotes": "370909",
+    "imdbID": "tt2395427",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Avengers",
+    "Year": "2012",
+    "Rated": "PG-13",
+    "Released": "2012-05-04",
+    "Runtime": "143 min",
+    "Genre": "Action, Sci-Fi, Thriller",
+    "Director": "Joss Whedon",
+    "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "Language": "English, Russian",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Oscar. Another 35 wins & 76 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
+    "Metascore": "69",
+    "imdbRating": "8.1",
+    "imdbVotes": "920458",
+    "imdbID": "tt0848228",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Shawshank Redemption",
+    "Year": "1994",
+    "Rated": "R",
+    "Released": "1994-10-14",
+    "Runtime": "142 min",
+    "Genre": "Crime, Drama",
+    "Director": "Frank Darabont",
+    "Writer": "Stephen King (short story \"Rita Hayworth and Shawshank Redemption\"), Frank Darabont (screenplay)",
+    "Actors": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+    "Plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 7 Oscars. Another 14 wins & 20 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg",
+    "Metascore": "80",
+    "imdbRating": "9.3",
+    "imdbVotes": "1590699",
+    "imdbID": "tt0111161",
+    "Type": "movie"
+  },
+  {
+    "Title": "Batman Begins",
+    "Year": "2005",
+    "Rated": "PG-13",
+    "Released": "2004-06-15",
+    "Runtime": "140 min",
+    "Genre": "Action, Adventure",
+    "Director": "Christopher Nolan",
+    "Writer": "Bob Kane (characters), David S. Goyer (story), Christopher Nolan (screenplay), David S. Goyer (screenplay)",
+    "Actors": "Christian Bale, Michael Caine, Liam Neeson, Katie Holmes",
+    "Plot": "After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.",
+    "Language": "English, Urdu, Mandarin",
+    "Country": "USA, UK",
+    "Awards": "Nominated for 1 Oscar. Another 16 wins & 63 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BNTM3OTc0MzM2OV5BMl5BanBnXkFtZTYwNzUwMTI3._V1_SX300.jpg",
+    "Metascore": "70",
+    "imdbRating": "8.3",
+    "imdbVotes": "906246",
+    "imdbID": "tt0372784",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Dark Knight",
+    "Year": "2008",
+    "Rated": "PG-13",
+    "Released": "2008-07-18",
+    "Runtime": "152 min",
+    "Genre": "Action, Crime, Drama",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
+    "Actors": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
+    "Plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+    "Language": "English, Mandarin",
+    "Country": "USA, UK",
+    "Awards": "Won 2 Oscars. Another 141 wins & 126 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+    "Metascore": "82",
+    "imdbRating": "9.0",
+    "imdbVotes": "1564829",
+    "imdbID": "tt0468569",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Dark Knight Rises",
+    "Year": "2012",
+    "Rated": "PG-13",
+    "Released": "2012-07-20",
+    "Runtime": "164 min",
+    "Genre": "Action, Thriller",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan (screenplay), Christopher Nolan (screenplay), Christopher Nolan (story), David S. Goyer (story), Bob Kane (characters)",
+    "Actors": "Christian Bale, Gary Oldman, Tom Hardy, Joseph Gordon-Levitt",
+    "Plot": "Eight years after the Joker's reign of anarchy, the Dark Knight, with the help of the enigmatic Selia, is forced from his imposed exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane.",
+    "Language": "English",
+    "Country": "USA, UK",
+    "Awards": "Nominated for 1 BAFTA Film Award. Another 44 wins & 98 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
+    "Metascore": "78",
+    "imdbRating": "8.5",
+    "imdbVotes": "1070247",
+    "imdbID": "tt1345836",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Revenant",
+    "Year": "2015",
+    "Rated": "R",
+    "Released": "2016-01-08",
+    "Runtime": "156 min",
+    "Genre": "Adventure, Drama, Thriller",
+    "Director": "Alejandro González Iñárritu",
+    "Writer": "Mark L. Smith (screenplay), Alejandro González Iñárritu (screenplay), Michael Punke (based in part on the novel by)",
+    "Actors": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter",
+    "Plot": "A frontiersman on a fur trading expedition in the 1820's fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+    "Language": "English, French, Pawnee",
+    "Country": "USA",
+    "Awards": "Nominated for 12 Oscars. Another 29 wins & 118 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMjU4NDExNDM1NF5BMl5BanBnXkFtZTgwMDIyMTgxNzE@._V1_SX300.jpg",
+    "Metascore": "77",
+    "imdbRating": "8.3",
+    "imdbVotes": "86285",
+    "imdbID": "tt1663202",
+    "Type": "movie"
+  },
+  {
+    "Title": "Star Wars: The Force Awakens",
+    "Year": "2015",
+    "Rated": "PG-13",
+    "Released": "2015-12-18",
+    "Runtime": "135 min",
+    "Genre": "Action, Adventure, Fantasy",
+    "Director": "J.J. Abrams",
+    "Writer": "Lawrence Kasdan, J.J. Abrams, Michael Arndt, George Lucas (based on characters created by)",
+    "Actors": "Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver",
+    "Plot": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 5 Oscars. Another 2 wins & 25 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg",
+    "Metascore": "81",
+    "imdbRating": "8.4",
+    "imdbVotes": "390401",
+    "imdbID": "tt2488496",
+    "Type": "movie"
+  },
+  {
+    "Title": "The Martian",
+    "Year": "2015",
+    "Rated": "PG-13",
+    "Released": "2015-10-02",
+    "Runtime": "144 min",
+    "Genre": "Adventure, Comedy, Drama",
+    "Director": "Ridley Scott",
+    "Writer": "Drew Goddard (screenplay), Andy Weir (book)",
+    "Actors": "Matt Damon, Jessica Chastain, Kristen Wiig, Jeff Daniels",
+    "Plot": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+    "Language": "English, Mandarin",
+    "Country": "USA, UK",
+    "Awards": "Won 2 Golden Globes. Another 16 wins & 117 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_SX300.jpg",
+    "Metascore": "80",
+    "imdbRating": "8.1",
+    "imdbVotes": "275300",
+    "imdbID": "tt3659388",
+    "Type": "movie"
+  },
+  {
+    "Title": "True Detective",
+    "Year": "2014",
+    "Rated": "TV-MA",
+    "Released": "2014-01-12",
+    "Runtime": "55 min",
+    "Genre": "Crime, Drama, Mystery",
+    "Director": "N/A",
+    "Writer": "Nic Pizzolatto",
+    "Actors": "Matthew McConaughey, Colin Farrell, Woody Harrelson, Rachel McAdams",
+    "Plot": "An anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 4 Golden Globes. Another 24 wins & 40 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTUzNTMwODI1OV5BMl5BanBnXkFtZTgwMDIzMTQ0NTE@._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "9.1",
+    "imdbVotes": "300438",
+    "imdbID": "tt2356777",
+    "Type": "series"
+  },
+  {
+    "Title": "Hawaii Five-0",
+    "Year": "2010",
+    "Rated": "TV-14",
+    "Released": "2010-08-14",
+    "Runtime": "42 min",
+    "Genre": "Action, Crime, Drama",
+    "Director": "N/A",
+    "Writer": "Leonard Freeman, Alex Kurtzman, Peter M. Lenkov, Roberto Orci",
+    "Actors": "Alex O'Loughlin, Scott Caan, Daniel Dae Kim, Grace Park",
+    "Plot": "Steve McGarrett returns home to Oahu, in order to find his father's killer. The governor offers him the chance to run his own task force (Five-0). Steve's team is joined by Chin Ho Kelly, Danny \"Danno\" Williams, and Kono Kalakaua.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 1 Golden Globe. Another 6 wins & 17 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTgyNDk4ODk5MF5BMl5BanBnXkFtZTgwNjY5ODc0NjE@._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "7.4",
+    "imdbVotes": "44099",
+    "imdbID": "tt1600194",
+    "Type": "series"
+  },
+  {
+    "Title": "Cosmos: A Spacetime Odyssey",
+    "Year": "2014",
+    "Rated": "TV-PG",
+    "Released": "2014-03-14",
+    "Runtime": "557 min",
+    "Genre": "Documentary",
+    "Director": "N/A",
+    "Writer": "N/A",
+    "Actors": "Neil deGrasse Tyson, Carl Sagan",
+    "Plot": "A documentary series that explores how we discovered the laws of nature and found our coordinates in space and time.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Won 3 Primetime Emmys. Another 8 wins & 21 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTc5NzgwNDE3N15BMl5BanBnXkFtZTgwNDAxMTY5MTE@._V1._CR51,41,938,1336_SY132_CR2,0,89,132_AL_.jpg_V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "9.4",
+    "imdbVotes": "47571",
+    "imdbID": "tt2395695",
+    "Type": "series"
+  },
+  {
+    "Title": "Last Week Tonight with John Oliver",
+    "Year": "2014",
+    "Rated": "TV-MA",
+    "Released": "2014-04-17",
+    "Runtime": "30 min",
+    "Genre": "Comedy, News, Talk-Show",
+    "Director": "N/A",
+    "Writer": "N/A",
+    "Actors": "John Oliver, David Kaye",
+    "Plot": "Former Daily Show Correspondent John Oliver brings his persona to this new weekly news satire program.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Won 1 Primetime Emmy. Another 3 wins & 13 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BNTgyMzIzNDAyM15BMl5BanBnXkFtZTgwMTE1Mzg0MTE@._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "9.2",
+    "imdbVotes": "27218",
+    "imdbID": "tt3530232",
+    "Type": "series"
+  },
+  {
+    "Title": "The Daily Show",
+    "Year": "1996",
+    "Rated": "TV-14",
+    "Released": "1996-07-22",
+    "Runtime": "30 min",
+    "Genre": "Comedy, News, Talk-Show",
+    "Director": "N/A",
+    "Writer": "Lizz Winstead, Madeleine Smithberg",
+    "Actors": "Jon Stewart",
+    "Plot": "America's top fake news show.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Won 23 Primetime Emmys. Another 27 wins & 115 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BNTg0MzEzMjQ4OV5BMl5BanBnXkFtZTcwNjk5NzkyMQ@@._V1._CR26,5,333,403_SY132_CR10,0,89,132_AL_.jpg_V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "8.8",
+    "imdbVotes": "31031",
+    "imdbID": "tt0115147",
+    "Type": "series"
+  },
+  {
+    "Title": "House M.D.",
+    "Year": "2004",
+    "Rated": "TV-14",
+    "Released": "2004-11-16",
+    "Runtime": "44 min",
+    "Genre": "Drama, Mystery",
+    "Director": "N/A",
+    "Writer": "David Shore",
+    "Actors": "Hugh Laurie, Omar Epps, Robert Sean Leonard, Jesse Spencer",
+    "Plot": "An antisocial maverick doctor who specializes in diagnostic medicine does whatever it takes to solve puzzling cases that come his way using his crack team of doctors and his wits.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Won 2 Golden Globes. Another 51 wins & 117 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMjA4NTkzNjg1OF5BMl5BanBnXkFtZTcwNjg3MTI1Ng@@._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "8.8",
+    "imdbVotes": "285972",
+    "imdbID": "tt0412142",
+    "Type": "series"
+  },
+  {
+    "Title": "The Colbert Report",
+    "Year": "2005",
+    "Rated": "TV-14",
+    "Released": "2005-10-17",
+    "Runtime": "30 min",
+    "Genre": "Comedy, News, Talk-Show",
+    "Director": "N/A",
+    "Writer": "N/A",
+    "Actors": "Stephen Colbert",
+    "Plot": "Satirical newscaster Stephen Colbert provides humorous commentary on the big issues going on in the United States and the rest of the world, with his larger-than-life ego and overly-patriotic spirit along with him every step of the way.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Won 7 Primetime Emmys. Another 15 wins & 72 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTM1NzE5OTI5NV5BMl5BanBnXkFtZTcwNjY5NTI1MQ@@._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "8.7",
+    "imdbVotes": "28418",
+    "imdbID": "tt0458254",
+    "Type": "series"
+  },
+  {
+    "Title": "The Newsroom",
+    "Year": "2012",
+    "Rated": "TV-MA",
+    "Released": "2012-06-24",
+    "Runtime": "55 min",
+    "Genre": "Drama",
+    "Director": "N/A",
+    "Writer": "Aaron Sorkin",
+    "Actors": "Jeff Daniels, Emily Mortimer, John Gallagher Jr., Alison Pill",
+    "Plot": "A newsroom undergoes some changes in its workings and morals as a new team is brought in, bringing unexpected results for its existing news anchor.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "Nominated for 2 Golden Globes. Another 8 wins & 29 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTEyMzc0ODAwMjVeQTJeQWpwZ15BbWU4MDMxODk4OTIx._V1_SX300.jpg",
+    "Metascore": "N/A",
+    "imdbRating": "8.6",
+    "imdbVotes": "75442",
+    "imdbID": "tt1870479",
+    "Type": "series"
+  }
+  ---------------------------------------------
+  {
+  "emailId":"shravya@gmail.com",
+ "createdDate": "2016-15-04", 
+ "firstName": "shravya",
+ "lastName": "gurram", 
+ "password": "shravya12",
+ "userType": "user",
+ "username": "shravyagurram"
+ }
+{
+  "emailId":"sweety@gmail.com",
+ "createdDate": "2016-13-04", 
+ "firstName": "sweety",
+ "lastName": "trip", 
+ "password": "sweety12",
+ "userType": "user",
+ "username": "sweetytrip"
+ 
+}
+
+{
+  "emailId":"Bunty@gmail.com",
+ "createdDate": "2016-13-04", 
+ "firstName": "Bunty",
+ "lastName": "gurram", 
+ "password": "bunty12",
+ "userType": "admin",
+ "username": "Buntygurram"
+}
+-----------------------------------------------------------------------------
+{
+ "userComment":"good movie",
+ "userRating": "8.5", 
+ "showdetails":
+ {
+ "MovieId": "66e5af51-eabe-4b81-8849-53e364997864"
+ },
+ 
+ "userdetails":
+ {
+ "emailId":"shravya@gmail.com"
+ }
+ }
+
+
+{
+ "userComment":"avgerage movie",
+ "userRating": "7.5", 
+ "showdetails":
+ {
+ "MovieId": "bb5d6d2f-90f2-4bab-8d1f-9b98a5658299"
+ },
+ 
+ "userdetails":
+ {
+ "emailId":"sweety@gmail.com"
+ }
+}
+
+{
+ "userComment":"bad movie",
+ "userRating": "6", 
+ "showdetails":
+ {
+ "MovieId": "bb5d6d2f-90f2-4bab-8d1f-9b98a5658299"
+ },
+ 
+ "userdetails":
+ {
+ "emailId":"Bunty@gmail.com"
+ }
+}
+---------------------------------------------
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJWaW5pdGhAZ21haWwuY29tIiwicm9sZXMiOiJ1c2VyIiwiaWF0IjoxNDYxMjEwMzMzfQ.mIHbyeTbd-yVM9LmT8amFleay4iF-aipVv2rTz8UGaI"
+}
+
+For Login:
+
+{
+  "username":"shravyagurram",
+  "password": "shravya12"
+}

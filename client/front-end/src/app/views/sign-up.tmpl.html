@@ -1,0 +1,55 @@
+<div id="movieimg">
+    <div id="signup">
+        <p id="heading">Sign Up</p>
+
+        <form name="signupForm" ng-submit="homeVm.signUp()" novalidate>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Your first name.."
+                       ng-model="homeVm.user.firstName" required>
+                <div ng-messages="signupForm.firstName.$error" class="error" ng-if="signupForm.firstName.$dirty">
+                    <p ng-message="required">First Name cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Your Last name.."
+                       ng-model="homeVm.user.lastName" required>
+                <div ng-messages="signupForm.lastName.$error" class="error" ng-if="signupForm.lastName.$dirty">
+                    <p ng-message="required">Last Name cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Your user name.."
+                       ng-model="homeVm.user.username" required>
+                <div ng-messages="signupForm.username.$error" class="error" ng-if="signupForm.username.$dirty">
+                    <p ng-message="required">User Name cannot be empty</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="emailId">Email address</label>
+                <input type="email" class="form-control" name="emailId" id="emailId" placeholder="example@domain.com"
+                       ng-model="homeVm.user.emailId" required>
+                <div ng-messages="signupForm.emailId.$error" class="error" ng-if="signupForm.emailId.$dirty">
+                    <p ng-message="required">Email cannot be empty</p>
+                    <p ng-message="email">Email is invalid</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" name="password" id="password" placeholder="Password"
+                       ng-model="homeVm.user.password" required>
+                <div ng-messages="signupForm.password.$error" class="error" ng-if="signupForm.password.$dirty">
+                    <p ng-message="required">Password cannot be empty</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-md" ng-disabled="signupForm.$invalid">Sign Up</button>
+
+        </form>
+
+    </div>
+</div>
+

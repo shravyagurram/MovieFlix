@@ -1,0 +1,29 @@
+<div class="container">
+    <a href="#/homepage" ng-click="filterVm.logout()" class="pull-right btn btn-primary btn-md">Logout</a></h2>
+    <a href="#/api/user" class="pull-right btn btn-link">Back</a>
+    <h2>Top Rated Movies</h2>
+    <div>
+        <span> <input type="search" ng-model="moviesVm.searchText.title" placeholder="Search goes here..." class="form-control"></span>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th></th>
+            <th ng-click="filterVm.changeSort('title')">Title</th>
+            <th ng-click="filterVm.changeSort('imdbRating')">Imdb Rating</th>
+            <th ng-click="filterVm.changeSort('imdbVotes')">Imdb Votes</th>
+            <th ng-click="filterVm.changeSort('language')">Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="movie in filterVm.movies | filter:filterVm.searchText | orderBy:filterVm.sorter.by:filterVm.sorter.reverse">
+            <td><a ng-href="#/api/user/{{movie.movieId}}"><img id="sort-catalog" ng-src="{{movie.poster}}" class="img-thumbnail"></a></td>
+            <td>{{movie.title}} </td>
+            <td>{{movie.imdbRating}}</td>
+            <td>{{movie.imdbVotes}}</td>
+            <td>{{movie.language}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div >
+        <a href="#/homepage" ng-click="moviesVm.logout()" class="pull-right btn btn-primary btn-md">Logout</a></h2>
+        <div id="admin"><a href="#/api/home" ><button  class="pull-right btn btn-primary btn-md" ng-show="moviesVm.user.userType=='admin'">Admin</button></a></div>
+    </div>
+    <div>Hello {{moviesVm.user.firstName}} {{moviesVm.user.lastName}} !</div>
+
+    <h2>Movies List</h2>
+    <div id="drop-down" class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Top Rated <span class="caret"></span>
+        </button>
+        <ul  class="dropdown-menu">
+            <li><a href="#/api/topratedmovies">Movies</a></li>
+            <li><a href="#/api/topratedseries">Series</a></li>
+
+        </ul>
+    </div>
+
+    <div>
+        <span> <input type="search" ng-model="moviesVm.searchText.title" placeholder="Search goes here..." class="form-control"></span>
+
+    </div>
+
+       <div id="user-list">
+
+        <div ng-repeat="movie in moviesVm.movies">
+            <a ng-href="#/api/user/{{movie.movieId}}"><img id="browse-img" ng-src="{{movie.poster}}" class="img-thumbnail"></a>
+             <b>{{movie.title}}</b>
+            </div>
+
+
+       </div>
+</div>

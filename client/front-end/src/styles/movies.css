@@ -1,0 +1,80 @@
+#browse-img {
+    width: 200px;
+    height: 300px;
+}
+#sort-catalog{
+    width: 130px;
+    height: 150px;
+}
+
+#moviedetail-img{
+    width: 400px;
+    height: 500px;
+}
+#user-list div{
+
+    max-width: 250px;
+    float:left;
+    border:10px;
+    padding:10px;
+}
+
+#user-list title{
+ display:none;
+}
+
+#movie-img{
+    float:left;
+}
+
+#movie-details{
+    font-weight: bold;
+}
+
+#user-comments{
+    background-color: #6c9a8f;
+    color:lightgoldenrodyellow;
+    padding:5px;
+    border:5px;
+}
+
+#user-rating{
+   font-weight:500;
+    font-size: 25px;;
+}
+
+
+.rating{
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+
+ul.rating {
+    display: inline-block;
+}
+
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rating .filled {
+    color: #21568b;
+}
+
+#admin{
+    left:70px;
+    top:100px;
+}
+
+#drop-down{
+    left:1050px;
+    top:0px;
+}
+
+

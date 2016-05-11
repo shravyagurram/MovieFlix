@@ -1,0 +1,32 @@
+<div class="container">
+    <a href="#/homepage" ng-click="moviesVm.logout()" class="pull-right btn btn-primary btn-md">Logout</a></h2>
+    <a href="#/api/user" class="pull-right btn btn-link">Back</a>
+    <h2>Movies List</h2>
+    <div>
+      <span> <input type="search" ng-model="moviesVm.searchText.title" placeholder="Search goes here..." class="form-control"></span>
+        <a ng-href="#/api/admin"> <button type="submit" class="btn btn-default" >Add New Movie</button></a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th></th>
+            <th ng-click="moviesVm.changeSort('title')">Title</th>
+            <th ng-click="moviesVm.changeSort('imdbRating')">Rating</th>
+            <th ng-click="moviesVm.changeSort('language')">Language</th>
+            <th ng-click="moviesVm.changeSort('type')">Type</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="movie in moviesVm.movies | filter:moviesVm.searchText | orderBy:moviesVm.sorter.by:moviesVm.sorter.reverse">
+            <td><a ng-href="#/api/home/{{movie.movieId}}"><img id="sort-catalog" ng-src="{{movie.poster}}" class="img-thumbnail"></a></td>
+            <td>{{movie.title}} </td>
+            <td>{{movie.imdbRating}}</td>
+            <td>{{movie.language}}</td>
+            <td>{{movie.type}}</td>
+            <td><i ng-click="moviesVm.deleteMovie(movie)" class="glyphicon glyphicon-remove"></i></td>
+            <td><a ng-href="#/api/admin/edit/{{movie.movieId}}"><i ng-click="moviesVm.EditMovie(movie)" class="glyphicon glyphicon-pencil"></i></a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

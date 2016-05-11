@@ -1,0 +1,173 @@
+<div class="container">
+    <a href="#/homepage" ng-click="moviesVm.logout()" class="pull-right btn btn-primary btn-md">Logout</a></h2>
+    <h2>Add MovieDetails</h2>
+    <div class="row">
+        <form name="movieForm" ng-submit="moviesVm.addMovie()" novalidate>
+            <div class="form-group">
+                <label for="title">Movie Title</label>
+                <input type="text" class="form-control" name="title" id="title" ng-model="moviesVm.newMovie.title"
+                       placeholder="Movie Title" required minlength="2">
+                <div ng-messages="movieForm.title.$error" class="error" ng-if="movieForm.title.$dirty">
+                    <p ng-message="required">Title cannot be empty</p>
+                    <p ng-message="minlength">Title must be more than 2 chars</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" name="year" id="year" ng-model="moviesVm.newMovie.year"
+                       placeholder="Year of release" required minlength="4">
+                <div ng-messages="movieForm.year.$error" class="error" ng-if="movieForm.year.$dirty">
+                    <p ng-message="required">Year cannot be empty</p>
+                    <p ng-message="minlength">Year must be 4 chars</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="rated">Rated</label>
+                <input type="text" class="form-control" name="rated" id="rated" ng-model="moviesVm.newMovie.rated"
+                       placeholder="rated" required>
+                <div ng-messages="movieForm.rated.$error" class="error" ng-if="movieForm.rated.$dirty">
+                    <p ng-message="required">Rated cannot be empty</p>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="released">Released</label>
+                <input type="text" class="form-control" name="released" id="released" ng-model="moviesVm.newMovie.released"
+                       placeholder="YYYY/MM/DD" required>
+                <div ng-messages="movieForm.rated.$error" class="error" ng-if="movieForm.rated.$dirty">
+                    <p ng-message="required">Rated cannot be empty</p>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="runtime">Runtime</label>
+                <input type="text" class="form-control" name="runtime" id="runtime" ng-model="moviesVm.newMovie.runtime"
+                       placeholder="Runtime" required>
+                <div ng-messages="movieForm.runtime.$error" class="error" ng-if="movieForm.runtime.$dirty">
+                    <p ng-message="required">Runtime cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" name="genre" id="genre" ng-model="moviesVm.newMovie.genre"
+                       placeholder="Movie genre" required>
+                <div ng-messages="movieForm.genre.$error" class="error" ng-if="movieForm.genre.$dirty">
+                    <p ng-message="required">Genre cannot be empty</p>
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="director">Director</label>
+                    <input type="text" class="form-control" name="director" id="director"
+                           ng-model="moviesVm.newMovie.director" placeholder="Movie director" required>
+                    <div ng-messages="movieForm.director.$error" class="error" ng-if="movieForm.director.$dirty">
+                        <p ng-message="required">Director cannot be empty</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                        <label for="writer">Writer</label>
+                        <input type="text" class="form-control" name="writer" id="writer"
+                               ng-model="moviesVm.newMovie.writer" placeholder="Movie Writer" required>
+                        <div ng-messages="movieForm.writer.$error" class="error" ng-if="movieForm.writer.$dirty">
+                            <p ng-message="required">Writer cannot be empty</p>
+                        </div>
+                </div>
+                    <div class="form-group">
+                            <label for="actors">Actors</label>
+                            <input type="text" class="form-control" name="actors" id="actors"
+                                   ng-model="moviesVm.newMovie.actors" placeholder="Movie Actors" required>
+                            <div ng-messages="movieForm.actors.$error" class="error" ng-if="movieForm.actors.$dirty">
+                                <p ng-message="required">Actors cannot be empty</p>
+                            </div>
+                    </div>
+            <div class="form-group">
+                <label for="plot">Plot</label>
+                <input type="text" class="form-control" name="plot" id="plot"
+                       ng-model="moviesVm.newMovie.plot" placeholder="Movie Plot" required>
+                <div ng-messages="movieForm.plot.$error" class="error" ng-if="movieForm.plot.$dirty">
+                    <p ng-message="required">Plot cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="language">Language</label>
+                <input type="text" class="form-control" name="language" id="language"
+                       ng-model="moviesVm.newMovie.language" placeholder="Movie Language" required>
+                <div ng-messages="movieForm.language.$error" class="error" ng-if="movieForm.language.$dirty">
+                    <p ng-message="required">Language cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" name="country" id="country"
+                       ng-model="moviesVm.newMovie.country" placeholder="Movie Country" required>
+                <div ng-messages="movieForm.country.$error" class="error" ng-if="movieForm.country.$dirty">
+                    <p ng-message="required">Country cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="awards">Awards</label>
+                <input type="text" class="form-control" name="awards" id="awards"
+                       ng-model="moviesVm.newMovie.awards" placeholder="Movie Awards" required>
+                <div ng-messages="movieForm.awards.$error" class="error" ng-if="movieForm.awards.$dirty">
+                    <p ng-message="required">Awards cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="poster">Poster</label>
+                <input type="text" class="form-control" name="poster" id="poster"
+                       ng-model="moviesVm.newMovie.poster" placeholder="Movie Poster" required>
+                <div ng-messages="movieForm.poster.$error" class="error" ng-if="movieForm.poster.$dirty">
+                    <p ng-message="required">Poster cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="metascore">Metascore</label>
+                <input type="text" class="form-control" name="metascore" id="metascore"
+                       ng-model="moviesVm.newMovie.metascore" placeholder="Movie Metascore" required>
+                <div ng-messages="movieForm.metascore.$error" class="error" ng-if="movieForm.metascore.$dirty">
+                    <p ng-message="required">Metascore cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imdbRating">Imdb Rating</label>
+                <input type="text" class="form-control" name="imdbRating" id="imdbRating"
+                       ng-model="moviesVm.newMovie.imdbRating" placeholder="Movie Imdb Rating" required>
+                <div ng-messages="movieForm.imdbRating.$error" class="error" ng-if="movieForm.imdbRating.$dirty">
+                    <p ng-message="required">Imdb Rating cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imdbVotes">Imdb Votes</label>
+                <input type="text" class="form-control" name="imdbVotes" id="imdbVotes"
+                       ng-model="moviesVm.newMovie.imdbVotes" placeholder="Movie Imdb Votes" required>
+                <div ng-messages="movieForm.imdbVotes.$error" class="error" ng-if="movieForm.imdbVotes.$dirty">
+                    <p ng-message="required">Imdb Votes cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imdbID">Imdb ID</label>
+                <input type="text" class="form-control" name="imdbID" id="imdbID"
+                       ng-model="moviesVm.newMovie.imdbID" placeholder="Movie Imdb ID" required>
+                <div ng-messages="movieForm.imdbID.$error" class="error" ng-if="movieForm.imdbID.$dirty">
+                    <p ng-message="required">Imdb ID cannot be empty</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select class="form-control" name="type" id="type"
+                        ng-model="moviesVm.newMovie.type" required>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                </select>
+                <div ng-messages="movieForm.type.$error" class="error" ng-if="movieForm.type.$dirty">
+                    <p ng-message="required">Imdb ID cannot be empty</p>
+                </div>
+                </div>
+
+            <button type="submit" class="btn btn-default" ng-disabled="movieForm.$invalid">Add Movie</button>
+
+        </form>
+    </div>
+</div>
