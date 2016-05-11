@@ -1,7 +1,6 @@
 package io.egen.controller;
 
 import io.egen.entity.ShowDetails;
-
 import io.egen.exception.DataNotFoundException;
 import io.egen.service.HomeService;
 import io.swagger.annotations.Api;
@@ -10,6 +9,8 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -32,6 +33,12 @@ public class HomeController {
 			@ApiResponse(code = 500, message = "Internal Server Error") })
 	public List<ShowDetails> findAllShows() {
 		return service.findAllShows();
+	}
+	
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ShowDetails findShowById(@PathVariable("id") String Id) throws DataNotFoundException{
+		
+		 return service.findShowById(Id);
 	}
 
 	@RequestMapping(value = "/filter/{value}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)

@@ -29,6 +29,9 @@ public class UserCommentsController {
 			@ApiResponse(code = 400, message = "Bad request"),
 			@ApiResponse(code = 500, message = "Internal Server Error") })
 	public UserComments logRating(@RequestBody UserComments userComments) {
+		System.out.println("user "+ userComments.getUserdetails());
+		System.out.println("movie "+ userComments.getShowdetails().getMovieId());
+		System.out.println("controller "+ userComments);
 		return commentservice.logRating(userComments);
 	}
 
@@ -36,9 +39,8 @@ public class UserCommentsController {
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Success"),
 			@ApiResponse(code = 400, message = "Bad request"),
 			@ApiResponse(code = 500, message = "Internal Server Error") })
-	public double viewRatings(@PathVariable("movieid") String movieId,
-			HttpServletRequest req) {
-		System.out.println("user attribute" + req.getAttribute("emailid"));
+	public double viewRatings(@PathVariable("movieid") String movieId) {
+		//System.out.println("user attribute" + req.getAttribute("emailid"));
 		return commentservice.viewRatings(movieId);
 	}
 

@@ -5,8 +5,10 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import io.egen.entity.ShowDetails;
 import io.egen.entity.UserComments;
 import io.egen.entity.UserDetails;
+import io.egen.exception.DataNotFoundException;
 import io.egen.exception.UserAlreadyExistsException;
 import io.egen.exception.UserNotFoundException;
 import io.egen.service.LoginResponse;
@@ -38,7 +40,7 @@ public class UserController {
 	
 	
 
-	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ApiOperation(value = "create user", notes = "creates users")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Success"),
 			@ApiResponse(code = 400, message = "Bad request"),
@@ -46,6 +48,12 @@ public class UserController {
 	public UserDetails create(@RequestBody UserDetails userdetails)
 			throws UserAlreadyExistsException {
 		return service.create(userdetails);
+	}
+	
+	@RequestMapping(value = "/{username}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public UserDetails findUserById(@PathVariable("username") String Id) throws UserNotFoundException{
+		
+		 return service.findUserById(Id);
 	}
 
 	

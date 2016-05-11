@@ -9,4 +9,5 @@ public interface HomeRepository {
 	List<ShowDetails> findFilteredShows(String filterId);
 	public List<ShowDetails> findSortedShows(String sortId);
 	public List<ShowDetails> findTopRatedShows(String sortId);
+	public ShowDetails findShowById(String id);
 }

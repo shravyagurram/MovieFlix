@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.filter.GenericFilterBean;
@@ -26,8 +27,9 @@ public class JwtFilter extends GenericFilterBean {
 	public void doFilter(final ServletRequest req, final ServletResponse res,
 			final FilterChain chain) throws IOException, ServletException {
 		final HttpServletRequest request = (HttpServletRequest) req;
-
+		
 		final String authHeader = request.getHeader("Authorization");
+		System.out.println("authheader "+authHeader);
 		if (authHeader == null || !authHeader.startsWith("Bearer ")) {
 			throw new ServletException(
 					"Missing or invalid Authorization header.");
