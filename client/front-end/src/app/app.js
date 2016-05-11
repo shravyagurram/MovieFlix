@@ -81,7 +81,7 @@
                 })
 
                 .otherwise({
-                    redirectTo: '/signin'
+                    redirectTo: '/homepage'
                 });
 
             $httpProvider

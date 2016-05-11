@@ -48,6 +48,16 @@
                     console.log(error);
                 });
 
+           movieService
+                .getMovieById($routeParams.id)
+               .then(function (movie){
+                    console.log(movie);
+                    moviesVm.editmovie = movie;
+
+                }, function (error) {
+                  console.log(error);
+                });
+
         }
 
         function changeSort(prop) {
@@ -76,6 +86,7 @@
                 },
                     function (error) {
                         console.log(error);
+                        Notification.error('Invalid data please submit again');
                     });
         }
         
@@ -104,6 +115,7 @@
                     }
                     , function (error) {
                         console.log(error);
+                        Notification.error('Invalid data please submit again');
                     });
         }
         

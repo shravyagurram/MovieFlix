@@ -35,7 +35,7 @@
             <div class="form-group">
                 <label for="released">Released</label>
                 <input type="text" class="form-control" name="released" id="released" ng-model="moviesVm.editmovie.released"
-                       placeholder="YYYY/MM/DD" required>
+                       placeholder="YYYY-MM-DD" required>
                 <div ng-messages="movieForm.rated.$error" class="error" ng-if="movieForm.rated.$dirty">
                     <p ng-message="required">Released cannot be empty</p>
 
