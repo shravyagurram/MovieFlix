@@ -1,7 +1,8 @@
 package io.egen.controller;
 
-import io.egen.entity.ShowDetails;
+import javax.servlet.http.HttpServletResponse;
 
+import io.egen.entity.ShowDetails;
 import io.egen.exception.DataNotFoundException;
 import io.egen.exception.MovieDetailsExistsException;
 import io.egen.service.AdminService;
@@ -44,12 +45,15 @@ public class AdminController {
 		return service.update(movieId, details);
 	}
 
-	@RequestMapping(value = "/{imdbid}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/{movieid}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Success"),
 			@ApiResponse(code = 400, message = "Bad request"),
 			@ApiResponse(code = 500, message = "Internal Server Error") })
-	public void deleteMovieDetails(@PathVariable("imdbid") String imdbId)
+	public void deleteMovieDetails(@PathVariable("movieid") String movieId,HttpServletResponse response)
 			throws DataNotFoundException {
-		service.delete(imdbId);
+		response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		
+		service.delete(movieId);
 	}
 }

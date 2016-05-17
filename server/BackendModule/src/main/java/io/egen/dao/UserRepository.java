@@ -12,6 +12,11 @@ public interface UserRepository {
 
 	UserDetails findByEmail(String emailId);
 
+
+	UserDetails findById(String id);
+
+
+
 	
 
 }

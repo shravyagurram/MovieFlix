@@ -54,5 +54,14 @@ public class HomeServiceImpl implements HomeService{
 		return list;
 	}
 
+	@Override
+	public ShowDetails findShowById(String id) throws DataNotFoundException {
+		ShowDetails existing = repository.findShowById(id);
+		if (existing == null) {
+			throw new DataNotFoundException();
+		}
+		return repository.findShowById(id);
+	}
+
 	
 }

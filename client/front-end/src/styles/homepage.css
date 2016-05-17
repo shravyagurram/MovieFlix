@@ -1,0 +1,206 @@
+.backgroundimg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+#back1 {
+    background: url("http://az598155.vo.msecnd.net/wp-uploads/2014/07/Digital-Trends.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+#back2 {
+    background: url("http://assets.nydailynews.com/polopoly_fs/1.1162284.1347998081!/img/httpImage/image.jpg_gen/derivatives/article_970/watch18tvf-1-web.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#back3 {
+    background: url("http://cdn2.pcadvisor.co.uk/cmsdata/features/3265725/Mobile_lifestyle_45.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#back4 {
+    background: url("http://cdn.images.express.co.uk/img/dynamic/11/590x/children-watching-televis-453273.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+@keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#backgroundchange div:nth-of-type(1) {
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+#backgroundchange div:nth-of-type(2) {
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+#backgroundchange div:nth-of-type(3) {
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+#backgroundchange div:nth-of-type(4) {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+#backgroundchange div:nth-of-type(5) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+
+#backgroundchange div {
+    animation-name: backgroundchangeFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+
+    -webkit-animation-name: backgroundchangeFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+
+}
+
+#sitename{
+    font-family: 'Bangers', cursive;
+    font-size:80px;
+    height:100px;
+    width:300px;
+    color:#980929;
+    z-index:2;
+    position:fixed;
+    left:50px;
+    top:30px;
+}
+
+#caption{
+    font-family: 'Bangers', cursive;
+    font-size:60px;
+    height:500px;
+    width:600px;
+    color:#10B2B3;
+    z-index:2;
+    position:fixed;
+    left:50px;
+    top:250px;
+}
+
+#signin{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    border-color:#980929;
+    background-color: #980929;
+    font-weight:800;
+    height:40px;
+    width:80px;
+    color:whitesmoke;
+    z-index:2;
+    position:fixed;
+    left:1250px;
+    top:30px;
+}
+
+#newsignup{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    border-color:#980929;
+    background-color: #980929;
+    font-weight:800;
+    height:70px;
+    width:180px;
+    color:whitesmoke;
+    z-index:2;
+    position:fixed;
+    left:50px;
+    top:450px;
+}
+
+#movieimg{
+    background: url("https://demonsresume.files.wordpress.com/2010/12/movie-collage-2010.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#signup{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    border-color: #e7f5f3;
+    background-color: #e7f5f3;
+    font-weight:800;
+    height:550px;
+    width:450px;
+    color:#10B2B3;
+    z-index:3;
+    position:fixed;
+    left:450px;
+    top:70px;
+}
+
+#heading{
+    color:#0669BD;
+    text-align: center;
+    padding:20px;
+    font-size: xx-large;
+}
+p label {
+    min-width: 80px;
+    text-align: center;
+    display: inline-table;
+    font-weight: bold;
+    padding:10px;
+}
+
+#login{
+
+    text-align: center;
+}

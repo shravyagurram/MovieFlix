@@ -3,6 +3,7 @@ package io.egen.dao;
 import io.egen.entity.ShowDetails;
 
 
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -49,6 +50,11 @@ public class HomeRepositoryImpl implements HomeRepository {
 		query.setParameter("type", type);
 		return query.getResultList();
 		
+	}
+
+	@Override
+	public ShowDetails findShowById(String MovieId) {
+		return em.find(ShowDetails.class, MovieId);
 	}
 
 	

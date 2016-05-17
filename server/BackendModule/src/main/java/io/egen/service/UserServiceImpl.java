@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import io.egen.dao.UserRepository;
+import io.egen.entity.ShowDetails;
 import io.egen.entity.UserComments;
 import io.egen.entity.UserDetails;
+import io.egen.exception.DataNotFoundException;
 import io.egen.exception.UserAlreadyExistsException;
 import io.egen.exception.UserNotFoundException;
 
@@ -32,8 +34,8 @@ public class UserServiceImpl implements UserService{
 	
 	@Override
 	public UserDetails login(String emailId, String password) throws UserNotFoundException {
-		UserDetails existing = repository.findByEmail(emailId);
-		System.out.println("in service"+emailId);
+		UserDetails existing = repository.findById(emailId);
+		System.out.println("in service "+emailId);
 		
 		if(existing == null) {
 			throw new UserNotFoundException();
@@ -46,4 +48,17 @@ public class UserServiceImpl implements UserService{
 		UserDetails details=repository.findByEmail(emailId);
 		return details;
 	}
-}
+
+
+	@Override
+	public UserDetails findUserById(String id) throws UserNotFoundException {
+		
+		UserDetails existing = repository.findByEmail(id);
+		System.out.println(existing);
+		if (existing == null) {
+			throw new UserNotFoundException();
+		}
+		return repository.findByEmail(id);
+	}
+	}
+

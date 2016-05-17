@@ -1,7 +1,11 @@
 package io.egen.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+
 import org.springframework.stereotype.Repository;
 
 import io.egen.entity.UserComments;
@@ -24,9 +28,9 @@ public class UserRepositoryImpl implements UserRepository{
 	
 
 	@Override
-	public UserDetails findByEmail(String emailId) {
-		/*//TypedQuery<UserDetails> query = em.createQuery("SELECT u from UserDetails u where u.emailId=:emailid ",UserDetails.class);
-		query.setParameter("emailid", emailId);
+	public UserDetails findById(String emailId) {
+		/*TypedQuery<UserDetails> query = em.createQuery("SELECT u from UserDetails u where u.username=:username ",UserDetails.class);
+		query.setParameter("username", username);
 		List<UserDetails> userslist= query.getResultList();
 		if(userslist != null && userslist.size() == 1) {
 			System.out.println(userslist.get(0));
@@ -35,8 +39,23 @@ public class UserRepositoryImpl implements UserRepository{
 		else {
 			return null;
 		}*/
-		return em.find(UserDetails.class, emailId);
+	     UserDetails udetails=em.find(UserDetails.class, emailId);
+		 System.out.println(udetails);
+		 return udetails;
 	}
+
+
+
+	@Override
+	public UserDetails findByEmail(String emailId) {
+		UserDetails udetails=em.find(UserDetails.class, emailId);
+			
+				return udetails;
+	}
+
+
+
+	
 
 	
 	

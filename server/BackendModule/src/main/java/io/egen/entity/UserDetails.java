@@ -29,6 +29,7 @@ public class UserDetails {
 
 	private String firstName;
 	private String lastName;
+	private String username;
 	@Id
 	private String emailId;
 	private String password;
@@ -94,9 +95,20 @@ public class UserDetails {
 
 	
 	
-	//@JsonIgnore
-	@OneToMany(mappedBy="userdetails",cascade= {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.REMOVE,CascadeType.DETACH})
-	//@JoinColumn(name="emailId")
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+
+
+	@OneToMany(mappedBy="userdetails",cascade= {CascadeType.ALL ,CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.REMOVE,CascadeType.DETACH})
+	
 	private List<UserComments> usercomments;
 	
 }

@@ -24,6 +24,12 @@ public class ApplicationInitializer extends
 	protected String[] getServletMappings() {
 		return new String[] { "/*" };
 	}
+	
+	@Override
+    protected Filter[] getServletFilters() {
+        Filter [] singleton = { new CORSFilter() };
+        return singleton;
+    }
 
 	@Override
 	public void onStartup(ServletContext servletContext)

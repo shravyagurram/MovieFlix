@@ -1,0 +1,20 @@
+{
+  "name": "front-end",
+  "version": "0.0.1",
+  "description": "UI module for movieflix project",
+  "author": "gshravya490@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-uglify": "^1.5.3",
+    "main-bower-files": "^2.13.0",
+    "merge-stream": "^1.0.0"
+  }
+}

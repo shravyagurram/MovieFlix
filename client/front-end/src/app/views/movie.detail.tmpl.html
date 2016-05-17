@@ -1,0 +1,75 @@
+<div class="container">
+    <a href="#/homepage" ng-click="movieDetailVm.logout()" class="pull-right btn btn-primary btn-md">Logout</a></h2>
+    <h2>  {{movieDetailVm.movie.title}} <a href="#/api/home" class="pull-right btn btn-link">Back</a></h2>
+
+    <div id="movie-img"> <img id="moviedetail-img" ng-src="{{movieDetailVm.movie.poster}}"class="img-thumbnail"></div>
+    <div class="row">
+        <div class="col-sm-6">
+            <table id="movie-details" class="table table-striped">
+                <thead>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Year</td>
+                    <td>{{movieDetailVm.movie.year}}</td>
+                </tr>
+                <tr>
+                    <td>Rated</td>
+                    <td>{{movieDetailVm.movie.rated}}</td>
+                </tr>
+                <tr>
+                    <td>Released</td>
+                    <td>{{movieDetailVm.movie.released  | date:'yyyy-MM-dd'}}</td>
+                </tr>
+                <tr>
+                    <td>Runtime</td>
+                    <td>{{movieDetailVm.movie.runtime}}</td>
+                </tr>
+                <tr>
+                    <td>Genre</td>
+                    <td>{{movieDetailVm.movie.genre}}</td>
+                </tr>
+                <tr>
+                    <td>Director</td>
+                    <td>{{movieDetailVm.movie.director}}</td>
+                </tr>
+                <tr>
+                    <td>Writer</td>
+                    <td>{{movieDetailVm.movie.writer}}</td>
+                </tr>
+                <tr>
+                    <td>Actors</td>
+                    <td>{{movieDetailVm.movie.actors}}</td>
+                </tr>
+                <tr>
+                    <td>Plot</td>
+                    <td>{{movieDetailVm.movie.plot}}</td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>{{movieDetailVm.movie.language}}</td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>{{movieDetailVm.movie.country}}</td>
+                </tr>
+                <tr>
+                    <td>Awards</td>
+                    <td>{{movieDetailVm.movie.awards}}</td>
+                </tr>
+
+                <tr>
+                    <td>imdbRating</td>
+                    <td>{{movieDetailVm.movie.imdbRating}}</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>{{movieDetailVm.movie.type}}</td>
+                </tr>
+
+                </tbody>
+                </table>
+        </div>
+    </div>
+</div>

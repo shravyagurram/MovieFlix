@@ -1,0 +1,11 @@
+body {
+    font-size: 14px;
+}
+
+section {
+    min-height: 400px;
+}
+.error p{
+    color:#0000ee;
+    margin: 0;
+}

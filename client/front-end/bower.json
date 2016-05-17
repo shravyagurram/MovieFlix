@@ -1,0 +1,41 @@
+{
+  "name": "front-end",
+  "description": "UI module for movieflix project",
+  "main": "",
+  "authors": [
+    "gshravya490@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.4.9",
+    "gulp": "^3.9.1",
+    "angular-route": "^1.4.9",
+    "bootstrap": "^3.3.6",
+    "angular-messages": "^1.4.9",
+    "angular-bootstrap": "^1.3.2",
+    "angular-animate": "^1.5.5",
+    "font-awesome": "^4.6.2",
+    "angular-ui-notification": "^0.2.0",
+    "ngDatepicker": "*"
+  },
+  "devDependencies": {
+    "angular-animate": "^1.5.5"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.css"
+      ]
+    }
+  }
+}
