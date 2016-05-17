@@ -12,8 +12,8 @@
         homeVm.signUp=signUp;
         
         function signIn(){
-            console.log(homeVm.user.username);
-            var id=homeVm.user.username;
+            console.log(homeVm.user.emailId);
+            var id=homeVm.user.emailId;
             movieService
                 .userSignIn(homeVm.user)
                 .then(function(res) {
@@ -22,11 +22,10 @@
                     console.log(id);
                     authService.saveUser(id);
                    console.log( "token "+authService.getToken());
-                   // $http.defaults.headers.common.Authorization = 'Bearer ' + res.token;
+                   
                     $http.defaults.headers.common['Authorization'] = 'Bearer ' + res.token;
                     $location.path('/api/user');
                 }, function (error) {
-
                     console.log(error);
                     Notification.error('Invalid Credentials');
                 });
@@ -43,7 +42,7 @@
                     $location.path('/signin');
                 }, function (error) {
                     console.log(error);
-
+                    Notification.error('User exists... Please login...');
                 });
         }
     }

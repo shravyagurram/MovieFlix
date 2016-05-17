@@ -5,8 +5,8 @@
     'use strict';
 
     angular.module('uimodule')
-        .controller('MoviesController', MoviesController)
-        .directive('input',inputDirective);
+        .controller('MoviesController', MoviesController);
+      //  .directive('input',inputDirective);
     MoviesController.$inject = ['movieService','$routeParams','authService','$location','Notification'];
 
     function MoviesController(movieService,$routeParams,authService,$location,Notification) {
@@ -28,7 +28,7 @@
                 by: 'title',
                 reverse: false
             };
-            if (!authService.getToken()) { // Get token.
+            if (!authService.getToken()) { 
                 $location.path('/homepage');
             }
 
@@ -50,12 +50,12 @@
 
            movieService
                 .getMovieById($routeParams.id)
-               .then(function (movie){
-                    console.log(movie);
-                    moviesVm.editmovie = movie;
+              .then(function (movie){
+                   console.log(movie);
+                  moviesVm.editmovie = movie;
 
                 }, function (error) {
-                  console.log(error);
+                 console.log(error);
                 });
 
         }
@@ -121,9 +121,7 @@
         
         function logout(){
             authService.logout();
-            $window.onbeforeunload = function() {
-                $window.history.forward(1);
-            };
+
         }
         
        

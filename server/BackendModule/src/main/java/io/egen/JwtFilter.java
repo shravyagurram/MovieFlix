@@ -27,28 +27,40 @@ public class JwtFilter extends GenericFilterBean {
 	public void doFilter(final ServletRequest req, final ServletResponse res,
 			final FilterChain chain) throws IOException, ServletException {
 		final HttpServletRequest request = (HttpServletRequest) req;
+		HttpServletResponse response = (HttpServletResponse) res;
+        
+        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+        response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE,OPTIONS, HEAD");
+        response.setHeader("Access-Control-Max-Age", "3600");
+        response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept,authorization");
+       // response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            response.setStatus(HttpServletResponse.SC_OK);
+        } else {
+        	final String authHeader = request.getHeader("Authorization");
+    		System.out.println("authheader "+authHeader);
+    		if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+    			throw new ServletException(
+    					"Missing or invalid Authorization header.");
+    		}
+
+    		final String token = authHeader.substring(7);
+    		System.out.println(token);
+
+    		try {
+    			String EmailId = Jwts.parser().setSigningKey("secretkey")
+    					.parseClaimsJws(token).getBody().getSubject();
+    			System.out.println(EmailId);
+    			// UserDetails userdetails=service.findByEmail(EmailId);
+    			request.setAttribute("emailid", EmailId);
+    		} catch (final SignatureException e) {
+    			throw new ServletException("Invalid token.");
+    		}
+
+    		chain.doFilter(req, res);
+           // chain.doFilter(req, res);
+        }
 		
-		final String authHeader = request.getHeader("Authorization");
-		System.out.println("authheader "+authHeader);
-		if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-			throw new ServletException(
-					"Missing or invalid Authorization header.");
-		}
-
-		final String token = authHeader.substring(7);
-		System.out.println(token);
-
-		try {
-			String EmailId = Jwts.parser().setSigningKey("secretkey")
-					.parseClaimsJws(token).getBody().getSubject();
-			System.out.println(EmailId);
-			// UserDetails userdetails=service.findByEmail(EmailId);
-			request.setAttribute("emailid", EmailId);
-		} catch (final SignatureException e) {
-			throw new ServletException("Invalid token.");
-		}
-
-		chain.doFilter(req, res);
 	}
 
 }

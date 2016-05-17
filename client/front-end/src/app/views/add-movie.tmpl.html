@@ -14,11 +14,12 @@
             </div>
             <div class="form-group">
                 <label for="year">Year</label>
-                <input type="text" class="form-control" name="year" id="year" ng-model="moviesVm.newMovie.year"
+                <input type="number" class="form-control" name="year" id="year" ng-model="moviesVm.newMovie.year"
                        placeholder="Year of release" required minlength="4">
                 <div ng-messages="movieForm.year.$error" class="error" ng-if="movieForm.year.$dirty">
                     <p ng-message="required">Year cannot be empty</p>
                     <p ng-message="minlength">Year must be 4 chars</p>
+                    <p ng-message="number">Year should be a number</p>
                 </div>
             </div>
 
@@ -33,12 +34,13 @@
             </div>
             <div class="form-group">
                 <label for="released">Released</label>
-                <input type="text" class="form-control" name="released" id="released" ng-model="moviesVm.newMovie.released"
-                       placeholder="YYYY/MM/DD" required>
-                <div ng-messages="movieForm.rated.$error" class="error" ng-if="movieForm.rated.$dirty">
-                    <p ng-message="required">Rated cannot be empty</p>
+                <ng-datepicker id="released" ng-model="moviesVm.newMovie.released"  format="YYYY-MM-DD" view-format="YYYY-MM-DD" required>
+                </ng-datepicker>
+                <div ng-messages="movieForm.released.$error" class="error" ng-if="movieForm.released.$dirty">
+                    <p ng-message="required">Released date cannot be empty</p>
 
                 </div>
+
             </div>
 
             <div class="form-group">
@@ -132,18 +134,20 @@
             </div>
             <div class="form-group">
                 <label for="imdbRating">Imdb Rating</label>
-                <input type="text" class="form-control" name="imdbRating" id="imdbRating"
+                <input type="number" class="form-control" name="imdbRating" id="imdbRating"
                        ng-model="moviesVm.newMovie.imdbRating" placeholder="Movie Imdb Rating" required>
                 <div ng-messages="movieForm.imdbRating.$error" class="error" ng-if="movieForm.imdbRating.$dirty">
                     <p ng-message="required">Imdb Rating cannot be empty</p>
+                    <p ng-message="number">Imdb Rating should be a number</p>
                 </div>
             </div>
             <div class="form-group">
                 <label for="imdbVotes">Imdb Votes</label>
-                <input type="text" class="form-control" name="imdbVotes" id="imdbVotes"
+                <input type="number" class="form-control" name="imdbVotes" id="imdbVotes"
                        ng-model="moviesVm.newMovie.imdbVotes" placeholder="Movie Imdb Votes" required>
                 <div ng-messages="movieForm.imdbVotes.$error" class="error" ng-if="movieForm.imdbVotes.$dirty">
                     <p ng-message="required">Imdb Votes cannot be empty</p>
+                    <p ng-message="number">Imdb Votes should be a number</p>
                 </div>
             </div>
             <div class="form-group">

@@ -5,9 +5,10 @@
     'use strict';
 
     angular
-        .module('uimodule', ['ngRoute', 'ui.bootstrap','ngAnimate','ngMessages','ui-notification'])
+        .module('uimodule', ['ngRoute', 'ui.bootstrap','ngAnimate','ngMessages','ui-notification','jkuri.datepicker'])
         .factory('authInterceptor', authInterceptor)
         .config(['$routeProvider','$httpProvider','NotificationProvider',function($routeProvider,$httpProvider,NotificationProvider){
+            delete $httpProvider.defaults.headers.common['X-Requested-With'];
             $routeProvider
                 .when('/homepage', {
                     templateUrl: 'app/views/home-page.tmpl.html',
@@ -83,6 +84,7 @@
                 .otherwise({
                     redirectTo: '/homepage'
                 });
+
 
             $httpProvider
                 .interceptors.push('authInterceptor');

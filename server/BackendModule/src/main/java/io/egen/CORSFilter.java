@@ -19,11 +19,18 @@ public class CORSFilter implements Filter{
 	        HttpServletRequest request = (HttpServletRequest) req;
 	        String authHeader = request.getHeader("Authorization");
 			System.out.println("cors authheader "+authHeader);
-	        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+	        response.setHeader("Access-Control-Allow-Origin", "*");
 	        response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE,OPTIONS, HEAD");
 	        response.setHeader("Access-Control-Max-Age", "3600");
-	        response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type,authorization");
+	        response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept,authorization");
+	       // response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type,authorization");
+	       // response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
+	       
+	        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+	            response.setStatus(HttpServletResponse.SC_OK);
+	        } else {
 	        chain.doFilter(req, res);
+	        }
 }
 	 @Override
 		public void destroy() {

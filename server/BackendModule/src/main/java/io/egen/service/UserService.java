@@ -12,7 +12,7 @@ public interface UserService {
 
 	public UserDetails create(UserDetails userdetails) throws UserAlreadyExistsException;
 
-	public UserDetails login(String username, String password) throws UserNotFoundException;
+	public UserDetails login(String emailid, String password) throws UserNotFoundException;
     
 	public UserDetails findByEmail(String emailId);
 

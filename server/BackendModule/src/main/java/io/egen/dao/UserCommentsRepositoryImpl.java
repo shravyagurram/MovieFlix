@@ -28,7 +28,7 @@ public class UserCommentsRepositoryImpl implements UserCommentsRepository{
 
 	@Override
 	public double viewRatings(String movieId) {
-		TypedQuery<Double> query= em.createQuery("SELECT AVG(u.userRating) FROM ShowDetails s join s.usercomments u where s.MovieId=:movieid",Double.class);
+		TypedQuery<Double> query= em.createQuery("SELECT AVG(u.userRating) FROM ShowDetails s join s.usercomments u where s.MovieId=:movieid and u.userRating>0",Double.class);
 		query.setParameter("movieid", movieId);	
 		double ratings=query.getSingleResult();
 		return ratings;

@@ -70,7 +70,7 @@
                 .then(successFn, errorFn);
         }
         function getUserById(emailid) {
-            return $http.get(CONFIG.API_HOST + '/api/user/'+ emailid)
+            return $http.get(CONFIG.API_HOST + '/api/user/'+ emailid +'/')
                 .then(successFn, errorFn);
         }
         function userSignUp(user) {
@@ -87,7 +87,7 @@
         }
 
         function errorFn(response) {
-            return $q.reject('ERROR: ' + response.statusText);
+            return $q.reject(response.statusText);
         }
     }
 

@@ -28,8 +28,8 @@ public class UserRepositoryImpl implements UserRepository{
 	
 
 	@Override
-	public UserDetails findById(String username) {
-		TypedQuery<UserDetails> query = em.createQuery("SELECT u from UserDetails u where u.username=:username ",UserDetails.class);
+	public UserDetails findById(String emailId) {
+		/*TypedQuery<UserDetails> query = em.createQuery("SELECT u from UserDetails u where u.username=:username ",UserDetails.class);
 		query.setParameter("username", username);
 		List<UserDetails> userslist= query.getResultList();
 		if(userslist != null && userslist.size() == 1) {
@@ -38,10 +38,10 @@ public class UserRepositoryImpl implements UserRepository{
 		}
 		else {
 			return null;
-		}
-		//UserDetails udetails=em.find(UserDetails.class, username);
-		//System.out.println(udetails);
-		 //return udetails;
+		}*/
+	     UserDetails udetails=em.find(UserDetails.class, emailId);
+		 System.out.println(udetails);
+		 return udetails;
 	}
 
 

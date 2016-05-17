@@ -29,13 +29,13 @@ public class AuthenticationController {
 	public LoginResponse login(@RequestBody UserDetails userdetails)
 			throws UserNotFoundException {
 	
-		UserDetails details = service.login(userdetails.getUsername(),
+		UserDetails details = service.login(userdetails.getEmailId(),
 				userdetails.getPassword());
 		System.out.println("in controller" + details.getPassword());
 		if ((details.getPassword()).equals(userdetails.getPassword())) {
 
 			return new LoginResponse(Jwts.builder()
-					.setSubject(userdetails.getUsername())
+					.setSubject(userdetails.getEmailId())
 					.claim("roles", details.getUserType())
 					.setIssuedAt(new Date())
 					.signWith(SignatureAlgorithm.HS256, "secretkey").compact());

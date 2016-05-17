@@ -50,10 +50,10 @@ public class UserController {
 		return service.create(userdetails);
 	}
 	
-	@RequestMapping(value = "/{username}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public UserDetails findUserById(@PathVariable("username") String Id) throws UserNotFoundException{
-		
-		 return service.findUserById(Id);
+	@RequestMapping(value = "/{emailId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public UserDetails findUserById(@PathVariable("emailId") String emailId) throws UserNotFoundException{
+		System.out.println("in user controller"+emailId);
+		 return service.findUserById(emailId);
 	}
 
 	

@@ -3,7 +3,7 @@
     <a href="#/api/user" class="pull-right btn btn-link">Back</a>
     <h2>Shows Catalogue</h2>
     <div>
-        <span> <input type="search" ng-model="moviesVm.searchText.title" placeholder="Search goes here..." class="form-control"></span>
+        <span> <input type="search" ng-model="searchText" placeholder="Search goes here..." class="form-control"></span>
     </div>
     <table class="table table-striped">
         <thead>
@@ -13,16 +13,20 @@
             <th ng-click="moviesVm.changeSort('imdbRating')">Imdb Rating</th>
             <th ng-click="moviesVm.changeSort('imdbVotes')">Imdb Votes</th>
             <th ng-click="moviesVm.changeSort('language')">Language</th>
+            <th ng-click="moviesVm.changeSort('genre')">Genre</th>
+            <th ng-click="moviesVm.changeSort('type')">Type</th>
             <th ng-click="moviesVm.changeSort('year')">Released</th>
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="movie in moviesVm.movies | filter:moviesVm.searchText | orderBy:moviesVm.sorter.by:moviesVm.sorter.reverse">
+        <tr ng-repeat="movie in moviesVm.movies | filter:searchText | orderBy:moviesVm.sorter.by:moviesVm.sorter.reverse">
             <td><a ng-href="#/api/user/{{movie.movieId}}"><img id="sort-catalog" ng-src="{{movie.poster}}" class="img-thumbnail"></a></td>
             <td>{{movie.title}} </td>
             <td>{{movie.imdbRating}}</td>
             <td>{{movie.imdbVotes}}</td>
             <td>{{movie.language}}</td>
+            <td>{{movie.genre}}</td>
+            <td>{{movie.type}}</td>
             <td>{{movie.year}}</td>
         </tr>
         </tbody>

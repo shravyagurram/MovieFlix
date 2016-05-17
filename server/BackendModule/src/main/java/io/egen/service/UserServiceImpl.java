@@ -33,9 +33,9 @@ public class UserServiceImpl implements UserService{
 
 	
 	@Override
-	public UserDetails login(String username, String password) throws UserNotFoundException {
-		UserDetails existing = repository.findById(username);
-		System.out.println("in service "+username);
+	public UserDetails login(String emailId, String password) throws UserNotFoundException {
+		UserDetails existing = repository.findById(emailId);
+		System.out.println("in service "+emailId);
 		
 		if(existing == null) {
 			throw new UserNotFoundException();
@@ -53,12 +53,12 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public UserDetails findUserById(String id) throws UserNotFoundException {
 		
-		UserDetails existing = repository.findById(id);
+		UserDetails existing = repository.findByEmail(id);
 		System.out.println(existing);
 		if (existing == null) {
 			throw new UserNotFoundException();
 		}
-		return repository.findById(id);
+		return repository.findByEmail(id);
 	}
 	}
 
